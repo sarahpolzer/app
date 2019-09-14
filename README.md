@@ -1,4 +1,4 @@
-# **Bigrams Application **
+# Bigrams Application 
 
 ## Sarah Polzer
 
@@ -7,7 +7,9 @@ Takes in string or a file name on a web application and returns a bar chart of t
 ### Dependencies
 
 Flask==1.1.1
+
 nltk==3.4.5
+
 plotly==4.1.1
 
 Dependencies can be installed with pip3. Installation instruction are here: https://pip.pypa.io/en/stable/installing/. I'm using Ubuntu, so I just installed pip3 with apt-get.
