@@ -16,10 +16,9 @@ def enter_text():
     bigrams,counts = create_bigrams(text)
     if len(bigrams)==0:
         return  "No Bigrams Found :("
-    else:
-        bigram_bar = go.Figure([go.Bar(x=bigrams, y=counts)])
-        bigram_bar.update_layout(title_text='Bigrams and their Counts')
-        return bigram_bar.show()
+    bigram_bar = go.Figure([go.Bar(x=bigrams, y=counts)])
+    bigram_bar.update_layout(title_text='Bigrams and their Counts')
+    return bigram_bar.show()
 
 def create_bigrams(text):
     #Takes the text entered by the user and returns a list of bigrams and a list of their counts
