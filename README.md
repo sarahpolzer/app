@@ -32,7 +32,7 @@ Go into the app folder and run
 python3 bigrams_app.py
 ```
 
-A home page should launch
+A home page should launch at localhost:5000
 
 ![](images/home_page.png)
 
