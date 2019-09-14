@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import nltk 
+import plotly
 import plotly.graph_objects as go
 
 app = Flask(__name__)
@@ -18,7 +19,8 @@ def enter_text():
         return  "No Bigrams Found :("
     bigram_bar = go.Figure([go.Bar(x=bigrams, y=counts)])
     bigram_bar.update_layout(title_text='Bigrams and their Counts')
-    return bigram_bar.show()
+    plotly.offline.plot(bigram_bar, filename='templates/bar.html')
+    return render_template('bar.html')
 
 def create_bigrams(text):
     #Takes the text entered by the user and returns a list of bigrams and a list of their counts
