@@ -6,6 +6,10 @@ Takes in string or a file name on a web application and returns a bar chart of t
 
 ### Dependencies
 
+This build requires Python 3. If you don't have Python installed, installation instructions are located here:
+
+https://realpython.com/installing-python/
+
 Flask==1.1.1
 
 nltk==3.4.5
